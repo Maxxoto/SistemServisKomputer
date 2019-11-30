@@ -11,7 +11,7 @@ package com.hamlet.sistemserviskomputer.View;
  */
 public class Main {
     public static void main(String args[]) {
-        new FormPelanggan();
-//        new FormLogin();
+//        new FormPelanggan();
+        new FormLogin();
     }
 }

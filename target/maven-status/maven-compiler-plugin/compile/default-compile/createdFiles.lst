@@ -7,7 +7,9 @@ com/hamlet/sistemserviskomputer/Controllers/UserControllers.class
 com/hamlet/sistemserviskomputer/View/FormLogin$2.class
 com/hamlet/sistemserviskomputer/Model/Pelanggan.class
 com/hamlet/sistemserviskomputer/Model/Servis.class
+com/hamlet/sistemserviskomputer/View/FormRegister$2.class
 com/hamlet/sistemserviskomputer/View/FormPelanggan.class
 com/hamlet/sistemserviskomputer/Model/User.class
 com/hamlet/sistemserviskomputer/Controllers/PelangganControllers.class
+com/hamlet/sistemserviskomputer/View/FormRegister$3.class
 com/hamlet/sistemserviskomputer/View/Main.class

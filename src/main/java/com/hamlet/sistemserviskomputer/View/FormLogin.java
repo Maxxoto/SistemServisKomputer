@@ -5,6 +5,7 @@ package com.hamlet.sistemserviskomputer.View;
  * @author hamlet
  */
 
+import com.hamlet.sistemserviskomputer.Controllers.UserControllers;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
@@ -22,7 +23,7 @@ public class FormLogin {
     JLabel jlblpass;
     JButton jbtnlogin;
     JLabel jnotif;
-    UserControllers uc;
+    UserControllers uc = new UserControllers();
     
     public FormLogin() {
 //        START OF COMPONENTS
@@ -47,7 +48,9 @@ public class FormLogin {
             
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(jframe, "Login masih dibetulkan !");
+                String user = jtxtuser.getText();
+                String pass = String.valueOf(jtxtpass.getPassword());
+                uc.loginNew(jframe, user, pass);
             }
         });
         

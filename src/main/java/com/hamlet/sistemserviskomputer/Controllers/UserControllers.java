@@ -18,6 +18,10 @@ public class UserControllers {
     String username,password,roles;
     static ArrayList<User> dataUser = new ArrayList<>();
     
+    public UserControllers(){
+        dataUser.add(new User("admin","admin","admin"));
+    }
+    
     public void registerNew(JFrame jframe,String user,String pass){
         String role = "Pelanggan";
         

@@ -10,8 +10,12 @@ package com.hamlet.sistemserviskomputer.View;
  * @author hamlet
  */
 import com.hamlet.sistemserviskomputer.Controllers.UserControllers;
+import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.InputMismatchException;
 import javax.swing.*;
 public class FormRegister {
@@ -23,6 +27,7 @@ public class FormRegister {
     JLabel jlbluser;
     JLabel jlblpass;
     JLabel jlblpass2;
+    JLabel jnotif;
     JButton jbtnregister;
     
     UserControllers uc = new UserControllers();
@@ -79,6 +84,20 @@ public class FormRegister {
             }
         });
         
+        jnotif = new JLabel("Ke Halaman Login");
+        jnotif.setBounds(55, 225, 150, 20);
+        jnotif.setSize(500,20);
+        jnotif.setForeground(Color.BLUE.darker());
+        jnotif.setCursor(new Cursor(Cursor.HAND_CURSOR) {
+        });
+        jnotif.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e){
+                jframe.dispose();
+                new FormLogin();
+            }
+        });
+        
         
         
         
@@ -98,6 +117,7 @@ public class FormRegister {
         jpanel.add(jtxtpass);                
         jpanel.add(jlblpass2);
         jpanel.add(jtxtpass2);
+        jpanel.add(jnotif);
         jpanel.add(jbtnregister);
         
         
